@@ -54,11 +54,11 @@
                                         <td>{{ $invoice->eta }}</td>
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Are you sure ?');" action="{{ route('invoices.destroy', $invoice->id) }}" method="POST">
-                                                <a href="{{ route('invoices.show', $invoice->id) }}" class="btn btn-sm btn-dark">Show</a>
-                                                <a href="{{ route('invoices.edit', $invoice->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                                                <a href="{{ route('invoices.show', $invoice->id) }}" class="btn btn-sm btn-dark">Preview</a>
+                                                <!-- <a href="{{ route('invoices.edit', $invoice->id) }}" class="btn btn-sm btn-primary">Edit</a> -->
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                                <!-- <button type="submit" class="btn btn-sm btn-danger">Delete</button> -->
                                             </form>
                                         </td>
                                     </tr>

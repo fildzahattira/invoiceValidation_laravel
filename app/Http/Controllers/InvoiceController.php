@@ -85,4 +85,19 @@ class InvoiceController extends Controller
         //redirect to index
         return redirect()->route('invoices.index')->with(['success' => 'Invoice created successfully!']);
     }
+
+    /**
+     * show
+     *
+     * @param  mixed $id
+     * @return View
+     */
+    public function show(string $id): View
+    {
+        //get invoice by ID
+        $invoice = Invoice::findOrFail($id);
+
+        //render view with invoice
+        return view('invoices.show', compact('invoice'));
+    }
 }
