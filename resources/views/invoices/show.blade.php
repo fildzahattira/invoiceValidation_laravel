@@ -25,7 +25,7 @@
         <address>
             <strong>{{$invoice->client_name}}</strong><br>
             {{$invoice->client_address}}<br>
-            Email: email@client.com
+            {{$invoice->client_email}}<br>
         </address>
         </div>
     </div>

@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->dateTime('invoice_date');
+            $table->date('invoice_date');
             $table->string('client_name');
             $table->longText('client_address');
+            $table->string('client_email');
             $table->string('forwarding_vessel');
             $table->string('port_of_discharge');
             $table->string('port_of_loading');

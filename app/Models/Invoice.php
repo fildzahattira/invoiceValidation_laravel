@@ -33,6 +33,7 @@ class Invoice extends Model
         'invoice_date',
         'client_name',
         'client_address',
+        'client_email',
         'forwarding_vessel',
         'port_of_discharge',
         'port_of_loading',

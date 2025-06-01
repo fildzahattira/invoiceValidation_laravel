@@ -16,7 +16,7 @@
                     <h3 class="text-center my-4">Invoices data</h3>
                     <hr>
                 </div>
-                <div class="card border-0 shadow-sm rounded">
+                <div class="card border-0 shadow-sm rounded" >
                     <div class="card-body">
                         <a href="{{ route('invoices.create') }}" class="btn btn-md btn-success mb-3">Add Invoice</a>
                         <table class="table table-bordered">
@@ -25,6 +25,7 @@
                                     <th scope="col">Invoice Date</th>
                                     <th scope="col">Client Name</th>
                                     <th scope="col">Client Address</th>
+                                    <th scope="col">Client Email</th>
                                     <th scope="col">Forwarding Vessel</th>
                                     <th scope="col">Port of Discharge</th>
                                     <th scope="col">Port of Loading</th>
@@ -43,6 +44,7 @@
                                         <td>{{ $invoice->invoice_date }}</td>
                                         <td>{{ $invoice->client_name }}</td>
                                         <td>{{ $invoice->client_address }}</td>
+                                        <td>{{ $invoice->client_email }}</td>
                                         <td>{{ $invoice->forwarding_vessel }}</td>
                                         <td>{{ $invoice->port_of_discharge }}</td>
                                         <td>{{ $invoice->port_of_loading }}</td>
